@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "enddragonite",
+	"version": "${version}",
+	"name": "End Dragonite Mod",
+	"description": "More Cool Things To The End!",
+	"authors": [
+		"Michaliu!"
+	],
+	"contact": {
+		"homepage": "https://EndDragoniteMod.com/",
+		"sources": "https://github.com/Na Później"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/enddragonite/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.michaliu.enddragonite.EndDragoniteMod"
+		],
+		"fabric-datagen": [
+			"com.michaliu.enddragonite.EndDragoniteModDataGenerator"
+		]
+	},
+	"mixins": [
+		"enddragonite.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
